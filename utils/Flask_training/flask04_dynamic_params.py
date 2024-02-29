@@ -11,7 +11,7 @@
 """
 from flask import Flask
 
-from Flask_training import settings
+from utils.Flask_training import settings
 
 app = Flask(__name__)
 app.config.from_object(settings)

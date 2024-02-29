@@ -1,6 +1,6 @@
 from flask import Flask
 
-from Flask_training import settings
+from utils.Flask_training import settings
 
 app = Flask(__name__)
 app.config.from_object(settings)  # 通过这代码将独立的两个文件绑定在一起，将配置信息放在settings.py中降低耦合性
