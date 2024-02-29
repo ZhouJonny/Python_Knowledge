@@ -13,3 +13,5 @@ while True:
     pyautogui.moveRel(x, y)
     print(f'current location---x:{x} y:{y}')
     time.sleep(5)
+
+
