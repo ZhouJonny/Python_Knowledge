@@ -17,12 +17,12 @@ class Employee:
         if salary < 0:
             raise ValueError("Salary cannot be negative")
 
-        # if position.lower() == "manager":
-        #     return Manager(name, salary)
-        # elif position.lower() == "developer":
-        #     return Developer(name, salary)
-        # else:
-        #     return cls(name, salary)
+        if position.lower() == "manager":
+            return Manager(name, salary)
+        elif position.lower() == "developer":
+            return Developer(name, salary)
+        else:
+            return cls(name, salary)
 
         # 用match-case 实现上述功能
         # match
